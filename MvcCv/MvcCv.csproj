@@ -237,6 +237,7 @@
     <Content Include="Views\Home\Test2.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\Deneyim.cshtml" />
+    <Content Include="Views\Default\Egitimlerim.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
