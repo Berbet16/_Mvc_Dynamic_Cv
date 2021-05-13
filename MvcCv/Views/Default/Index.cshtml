@@ -38,7 +38,7 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">YETENEKLERİM</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">HOBİLERİM</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">SERTİFİKALARIM</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">İLETİŞİM</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">İLETİŞİM</a></li>
             </ul>
         </div>
     </nav>
@@ -73,67 +73,35 @@
         <section class="resume-section" id="experience">
             @Html.Action("Deneyim")
         </section>
+
         <hr class="m-0" />
         <!-- Education-->
         <section class="resume-section" id="education">
             @Html.Action("Egitimlerim")
         </section>
+
         <hr class="m-0" />
         <!-- Skills-->
         <section class="resume-section" id="skills">
             @Html.Action("Yeteneklerim")
         </section>
+
         <hr class="m-0" />
         <!-- Interests-->
         <section class="resume-section" id="interests">
             @Html.Action("Hobilerim")
         </section>
+
         <hr class="m-0" />
         <!-- Awards-->
         <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Awards & Certifications</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Google Analytics Certified Developer
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Mobile Web Specialist - Google Certification
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2
-                        <sup>nd</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - James Buchanan High School - Hackathon 2006
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        3
-                        <sup>rd</sup>
-                        Place - James Buchanan High School - Hackathon 2005
-                    </li>
-                </ul>
-            </div>
+            @Html.Action("Sertifikalar")
+        </section>
+
+        <hr class="m-0" />
+        <!-- contact-->
+        <section class="resume-section" id="contact">
+            @Html.Action("iletisim")
         </section>
     </div>
     <!-- Bootstrap core JS-->
