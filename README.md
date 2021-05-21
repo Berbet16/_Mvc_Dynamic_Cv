@@ -15,3 +15,12 @@ View, MVC’de projenin arayüzlerinin oluşturulduğu bölümdür. Bu bölümde
 # Controller Nedir?
 
 Controller, MVC’de projenin iç süreçlerini kontrol eden bölümdür. Bu bölümde View ile Model arasındaki bağlantı kurulur. Kullanıcılardan gelen istekler (request) Controller’larda değerlendirilir, isteğin detayına göre hangi işlemlerin yapılacağı ve kullanıcıya hangi View’ın döneceği (response) belirtilir.
+
+# Yetenek Listem
+![](Yetenek_Listesi.png)
+
+# Deneyim Listesi
+![](Deneyim_Listesi.png)
+
+# Eğitim Listesi
+![](Egitim_Listesi.png)
