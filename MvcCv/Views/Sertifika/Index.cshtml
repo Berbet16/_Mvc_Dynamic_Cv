@@ -1,0 +1,83 @@
+﻿@using MvcCv.Models.Entity
+@model List<TblSertifikalarim>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 3 | User Profile</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header p-2">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Activity</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Timeline</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Settings</a></li>
+                            </ul>
+                        </div><!-- /.card-header -->
+                        <div class="card-body">
+                            <!-- /.tab-pane -->
+                            <div class="tab-pane" id="timeline">
+                                <!-- The timeline -->
+                                <div class="timeline timeline-inverse">
+                                    @foreach (var item in Model)
+                                    {
+                                        <div class="time-label">
+                                            <a href="/Sertifika/SertifikaGetir/@item.ID" class="btn btn-success">
+                                                <span class="bg-success">
+                                                    @item.Tarih
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!-- /.timeline-label -->
+                                        <!-- timeline item -->
+                                        <div>
+                                            @*<i class="fas fa-comment bg-primary"></i>*@
+
+                                            <div class="timeline-item">
+                                                <div class="timeline-body">
+                                                    @item.Aciklama
+                                                </div>
+                                                @*<div class="timeline-footer">
+                                                        <a href="#" class="btn btn-primary btn-sm">Düzenle</a>
+                                                        <a href="#" class="btn btn-danger btn-sm">Sil</a>
+                                                    </div>*@
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                                <a href="/Sertifika/YeniSertifika" class="btn btn-primary">Yeni Sertifika Girişi</a>
+                            </div>
+                        </div>
+                    </div><!-- /.card-body -->
+                </div>
+                <!-- /.nav-tabs-custom -->
+            </div>
+            <!-- /.col -->
+        </div>
+    </section>
+</body>
+</html>
