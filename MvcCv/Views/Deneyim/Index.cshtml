@@ -5,7 +5,7 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-<br/>
+<br />
 <h2>Deneyim Listesi</h2>
 
 <table class="table table-bordered">
@@ -18,7 +18,7 @@
         <th>DÜZENLE</th>
     </tr>
 
-    @foreach(var item in Model)
+    @foreach (var item in Model)
     {
         <tr>
             <td>@item.ID</td>
@@ -30,5 +30,14 @@
         </tr>
     }
 </table>
-
-<a href="/Deneyim/DeneyimEkle/" class="btn btn-primary">Yeni Deneyim Ekle</a>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <a href="/Deneyim/DeneyimEkle/" class="btn btn-primary">Yeni Deneyim Ekle</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

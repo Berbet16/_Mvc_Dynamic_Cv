@@ -17,12 +17,18 @@ namespace MvcCv.Controllers
             return View(degerler);
         }
 
+        public PartialViewResult SosyalMedya()
+        {
+            var sosyalmedya = db.TblSosyalMedya.ToList();
+            return PartialView(sosyalmedya);
+        }
+
         public PartialViewResult Deneyim()
         {
             var deneyimler = db.TblDeneyimlerim.ToList();
             return PartialView(deneyimler);
         }
-        
+
         public PartialViewResult Egitimlerim()
         {
             var egitimler = db.TblEgitimlerim.ToList();
