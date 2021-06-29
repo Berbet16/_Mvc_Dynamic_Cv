@@ -19,7 +19,7 @@ namespace MvcCv.Controllers
 
         public PartialViewResult SosyalMedya()
         {
-            var sosyalmedya = db.TblSosyalMedya.ToList();
+            var sosyalmedya = db.TblSosyalMedya.Where(x => x.Durum == true).ToList();
             return PartialView(sosyalmedya);
         }
 
@@ -34,13 +34,13 @@ namespace MvcCv.Controllers
             var egitimler = db.TblEgitimlerim.ToList();
             return PartialView(egitimler);
         }
-        
+
         public PartialViewResult Yeteneklerim()
         {
             var yetenekler = db.TblYeteneklerim.ToList();
             return PartialView(yetenekler);
         }
-        
+
         public PartialViewResult Hobilerim()
         {
             var hobiler = db.TblHobilerim.ToList();
@@ -58,7 +58,7 @@ namespace MvcCv.Controllers
         {
             return PartialView();
         }
-        
+
         [HttpPost]
         public PartialViewResult iletisim(Tbliletisim t)
         {

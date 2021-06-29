@@ -44,8 +44,17 @@ namespace MvcCv.Controllers
         {
             var hesap = repo.Find(x => x.ID == p.ID);
             hesap.Ad = p.Ad;
+            hesap.Durum = true;
             hesap.ikon = p.ikon;
             hesap.Link = p.Link;
+            repo.TUpdate(hesap);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Sil(int id)
+        {
+            var hesap = repo.Find(x => x.ID == id);
+            hesap.Durum = false;
             repo.TUpdate(hesap);
             return RedirectToAction("Index");
         }
