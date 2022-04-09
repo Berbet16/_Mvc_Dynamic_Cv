@@ -24,3 +24,4 @@ Controller, MVC’de projenin iç süreçlerini kontrol eden bölümdür. Bu bö
 
 # Eğitim Listesi
 ![](Egitim_Listesi.png)
+
